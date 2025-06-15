@@ -1,71 +1,45 @@
-/* style.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Evan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
-}
+  <header>
+    <h1>Evan's Personal Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-header {
-  background-color: #2e7d32;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+  <section>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
+      <label for="reason">Reason for Contact:</label><br>
+      <select id="reason" name="reason">
+        <option value="hi">Saying hi</option>
+        <option value="contractor">Looking for a contractor</option>
+        <option value="interview">Interested in an interview</option>
+      </select><br>
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea><br>
 
-article, section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
-}
-
-footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-form {
-  margin-top: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-table, th, td {
-  border: 1px solid #999;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-}
+</body>
+</html>
