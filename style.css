@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Evan</title>
+  <title>Evan's Blog - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,28 +18,52 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Contact Me</h2>
+  <div class="main-content">
+    <div class="main-column">
+      <article>
+        <h2>The Value of Urban Nature Spaces</h2>
+        <p><time datetime="2025-06-08">June 8, 2025</time> by <span class="author">Evan McNulty</span></p>
+        <img src="Urban Park.jpg" alt="Urban park image">
+        <p>I’ve always felt that green spaces in cities are way more than just something nice to look at. I think they’re essential for people and wildlife. Spending time outdoors helps me feel more relaxed and clear-headed and I’ve noticed it does the same for others. When I volunteered with conservation projects, I saw how even small patches of land like a vacant lot turned into a garden could totally change the vibe of a neighborhood. It gave people something to care about and be proud of. I really admire how cities like Portland and Minneapolis are making a real effort to add more green spaces. It shows they care about making their communities healthier, happier, and more livable.</p>
+
+        <table>
+          <caption>Urban Parks Survey</caption>
+          <thead>
+            <tr><th>City</th><th>Green Space %</th><th>Residents Satisfied</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Portland</td><td>30%</td><td>85%</td></tr>
+            <tr><td>Minneapolis</td><td>32%</td><td>88%</td></tr>
+            <tr><td>Detroit</td><td>18%</td><td>61%</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>Lessons From Four Years at Stiles Pond Camp</h2>
+        <p><time datetime="2025-06-05">June 5, 2025</time> by <span class="author">Evan McNulty</span></p>
+        <img src="stiles pond.jpg" alt="Stiles Pond Day Camp">
+        <p>Working at Stiles Pond Day Camp taught me a lot about myself. I learned what it means to be patient, to step up as a leader, and to really listen to others. I think the most meaningful part for me was helping kids explore nature. Whether that meant leading a hike or encouraging someone who was nervous about getting in the water. Watching their confidence grow was honestly one of the best feelings. It made me realize how powerful outdoor experiences can be for building trust and self-esteem. And of course the quiet moments at sunset and making s’mores with everyone were some of my favorite memories.</p>
+      </article>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer id="newsletter">
+    <h3>Subscribe to my newsletter</h3>
     <form action="#" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-
-      <label for="reason">Reason for Contact:</label><br>
-      <select id="reason" name="reason">
-        <option value="hi">Saying hi</option>
-        <option value="contractor">Looking for a contractor</option>
-        <option value="interview">Interested in an interview</option>
-      </select><br>
-
-      <label for="message">Your Message:</label><br>
-      <textarea id="message" name="message" rows="5" cols="40"></textarea><br>
-
-      <button type="submit">Submit</button>
+      <label for="email">Email address:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Subscribe</button>
     </form>
-  </section>
+  </footer>
 
 </body>
 </html>
