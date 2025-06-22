@@ -1,69 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Evan's Blog - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
 
-  <header>
-    <h1>Evan's Personal Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  <div class="main-content">
-    <div class="main-column">
-      <article>
-        <h2>The Value of Urban Nature Spaces</h2>
-        <p><time datetime="2025-06-08">June 8, 2025</time> by <span class="author">Evan McNulty</span></p>
-        <img src="Urban Park.jpg" alt="Urban park image">
-        <p>I’ve always felt that green spaces in cities are way more than just something nice to look at. I think they’re essential for people and wildlife. Spending time outdoors helps me feel more relaxed and clear-headed and I’ve noticed it does the same for others. When I volunteered with conservation projects, I saw how even small patches of land like a vacant lot turned into a garden could totally change the vibe of a neighborhood. It gave people something to care about and be proud of. I really admire how cities like Portland and Minneapolis are making a real effort to add more green spaces. It shows they care about making their communities healthier, happier, and more livable.</p>
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-        <table>
-          <caption>Urban Parks Survey</caption>
-          <thead>
-            <tr><th>City</th><th>Green Space %</th><th>Residents Satisfied</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Portland</td><td>30%</td><td>85%</td></tr>
-            <tr><td>Minneapolis</td><td>32%</td><td>88%</td></tr>
-            <tr><td>Detroit</td><td>18%</td><td>61%</td></tr>
-          </tbody>
-        </table>
-      </article>
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
 
-      <article>
-        <h2>Lessons From Four Years at Stiles Pond Camp</h2>
-        <p><time datetime="2025-06-05">June 5, 2025</time> by <span class="author">Evan McNulty</span></p>
-        <img src="stiles pond.jpg" alt="Stiles Pond Day Camp">
-        <p>Working at Stiles Pond Day Camp taught me a lot about myself. I learned what it means to be patient, to step up as a leader, and to really listen to others. I think the most meaningful part for me was helping kids explore nature. Whether that meant leading a hike or encouraging someone who was nervous about getting in the water. Watching their confidence grow was honestly one of the best feelings. It made me realize how powerful outdoor experiences can be for building trust and self-esteem. And of course the quiet moments at sunset and making s’mores with everyone were some of my favorite memories.</p>
-      </article>
-    </div>
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    <aside class="sidebar">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </aside>
-  </div>
+article, section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
 
-  <footer id="newsletter">
-    <h3>Subscribe to my newsletter</h3>
-    <form action="#" method="post">
-      <label for="email">Email address:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </footer>
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
 
-</body>
-</html>
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #256428;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 40px;
+}
+
+.main-column {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-left: 2px solid #ccc;
+}
+
+.floated-img {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 300px;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
+
+#newsletter {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-top: 2px solid #2e7d32;
+}
+
+input[type="email"] {
+  border: 2px solid #888;
+}
+
+.author {
+  font-style: italic;
+  color: #555;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+ul {
+  margin-top: 0.5em;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #999;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
